@@ -6,7 +6,11 @@
   <script src="https://unpkg.com/vue@3.2.37/dist/vue.global.js"></script>
   <style>
 
-.waku {
+:root {
+  --dir: url(./data/data/kari/chara.jpg);
+}
+
+.all_waku {
       width: 1000px;
       height: 750px;
       display: flex;
@@ -24,7 +28,7 @@
 
     }
 
-.waku2 {
+.right_waku {
       width:  700px;
       height: 750px;
       background-color: rgb(255, 199, 87);
@@ -33,11 +37,11 @@
       flex-wrap: wrap;
     }
 
-.image {
+.i1 {
       width: 700px;
       height: 700px;
       border-radius: 4px;
-      background-image: url(./まるちゃん.jpg);
+      background-image: var(--dir);
       background-size: 100%;
 
     }
@@ -51,11 +55,12 @@
 
     }
 
-.maru {
+.c1 {
       width: 135px;
       height: 45px;
       border-radius: 4px;
-      background-image: url(./marubana.jpg);
+      font-size: 50;
+/*      background-image: url(./data/c1/bana.jpg); */
       background-size: 100%;
       border: 1px solid rgb(90, 90, 90);
     }
@@ -64,7 +69,7 @@
       width: 135px;
       height: 45px;
       border-radius: 4px;
-      background-image: url(./かりばなー.jpg);
+      background-image: url(./data/kari/bana.jpg);
       background-size: 100%;
       border: 1px solid rgb(90, 90, 90);
     }
@@ -75,13 +80,41 @@
 </head>
 <body>
   <div id="app">
-    <div class="waku">
+    <div class="all_waku">
       <div class="list">
-        <div class="maru" @click="hyoji"></div>
-        <div class="karibana" v-for="(id, i) in arr" :key="id" :class="[generateClassname(id)]" @click="hyoji"></div>
+        <div class="c1" @click="hyoji1">もふ</div>
+        <div class="c1" @click="hyoji2">まる</div>
+        <div class="c1" @click="hyoji3">ゆず</div>
+        <div class="c1" @click="hyoji4">ゆぅさん</div>
+        <div class="c1" @click="hyoji5">みぃ</div>
+        <div class="c1" @click="hyoji6">こうもり</div>
+        <div class="c1" @click="hyoji7">かい</div>
+        <div class="c1" @click="hyoji8">れん</div>
+        <div class="c1" @click="hyoji9">しろ</div>
+        <div class="c1" @click="hyoji10">くろ</div>
+        <div class="c1" @click="hyoji11">もも</div>
+        <div class="c1" @click="hyoji12">みるく</div>
+        <div class="c1" @click="hyoji13">そら</div>
+        <div class="c1" @click="hyoji14">よつば</div>
+        <div class="c1" @click="hyoji15">しぃ</div>
+        <div class="c1" @click="hyoji16">かく</div>
+        <div class="c1" @click="hyoji17">ろあ</div>
+        <div class="c1" @click="hyoji18">仮</div>
+        <div class="c1" @click="hyoji19">仮</div>
+        <div class="c1" @click="hyoji20">仮</div>
+        <div class="c1" @click="hyoji21">仮</div>
+        <div class="c1" @click="hyoji22">仮</div>
+        <div class="c1" @click="hyoji23">仮</div>
+        <div class="c1" @click="hyoji24">仮</div>
+        <div class="c1" @click="hyoji25">仮</div>
+        <div class="c1" @click="hyoji26">仮</div>
+        <div class="c1" @click="hyoji27">仮</div>
+        <div class="c1" @click="hyoji28">仮</div>
+        <div class="c1" @click="hyoji29">仮</div>
+        <div class="c1" @click="hyoji30">仮</div>
       </div>
-      <div class="waku2">
-        <div class="image"></div>
+      <div class="right_waku">
+        <div class="i1"></div>
         <div class="data">
           <p>ここにリンクとか入れたい</p>
         </div>
@@ -94,12 +127,68 @@
   <script>
     const App = {
       setup() {
-        const arr = Vue.ref([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28])
-        const generateClassname = (id) => 'bann' + String(id).padStart(2, '0')
+        const hyoji1  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c1/chara.jpg)"); }
+        const hyoji2  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c2/chara.jpg)"); }
+        const hyoji3  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c3/chara.jpg)"); }
+        const hyoji4  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c4/chara.jpg)"); }
+        const hyoji5  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c5/chara.jpg)"); }
+        const hyoji6  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c6/chara.jpg)"); }
+        const hyoji7  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c7/chara.jpg)"); }
+        const hyoji8  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c8/chara.jpg)"); }
+        const hyoji9  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c9/chara.jpg)"); }
+        const hyoji10  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c10/chara.jpg)"); }
+        const hyoji11  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c11/chara.jpg)"); }
+        const hyoji12  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c12/chara.jpg)"); }
+        const hyoji13  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c13/chara.jpg)"); }
+        const hyoji14  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c14/chara.jpg)"); }
+        const hyoji15  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c15/chara.jpg)"); }
+        const hyoji16  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c16/chara.jpg)"); }
+        const hyoji17  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c17/chara.jpg)"); }
+        const hyoji18  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c18/chara.jpg)"); }
+        const hyoji19  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c19/chara.jpg)"); }
+        const hyoji20  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c20/chara.jpg)"); }
+        const hyoji21  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c21/chara.jpg)"); }
+        const hyoji22  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c22/chara.jpg)"); }
+        const hyoji23  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c23/chara.jpg)"); }
+        const hyoji24  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c24/chara.jpg)"); }
+        const hyoji25  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c25/chara.jpg)"); }
+        const hyoji26  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c26/chara.jpg)"); }
+        const hyoji27  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c27/chara.jpg)"); }
+        const hyoji28  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c28/chara.jpg)"); }
+        const hyoji29  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c29/chara.jpg)"); }
+        const hyoji30  = () => { document.documentElement.style.setProperty('--dir', "url(./data/c30/chara.jpg)"); }
 
           return {
-            arr,
-            generateClassname,
+            hyoji1,
+            hyoji2,
+            hyoji3,
+            hyoji4,
+            hyoji5,
+            hyoji6,
+            hyoji7,
+            hyoji8,
+            hyoji9,
+            hyoji10,
+            hyoji11,
+            hyoji12,
+            hyoji13,
+            hyoji14,
+            hyoji15,
+            hyoji16,
+            hyoji17,
+            hyoji18,
+            hyoji19,
+            hyoji20,
+            hyoji21,
+            hyoji22,
+            hyoji23,
+            hyoji24,
+            hyoji25,
+            hyoji26,
+            hyoji27,
+            hyoji28,
+            hyoji29,
+            hyoji30,
         }
         // ↑ここにJavaScriptを書く。
       },
