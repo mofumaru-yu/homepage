@@ -10,8 +10,9 @@
   --dir: "./data/c4/chara.jpg)";
 }
 
+@media all and (min-width: 1000px){
 .all_waku {
-      width: 1000px;
+      width: 1300px;
       height: 750px;
       display: flex;
       flex-direction: row;
@@ -29,9 +30,64 @@
     }
 
 .right_waku {
-      width:  700px;
+      width:  1000px;
       height: 750px;
-      background-color: rgb(255, 199, 87);
+      background-color: rgb(255, 225, 166);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+.i1 {
+      width: 700px;
+      height: 700px;
+      border-radius: 4px;
+    }
+
+.data {
+      width: 700px;
+      height: 50px;
+      border-radius: 4px;
+      background-color: rgb(255, 225, 166);
+      background-size: 100%;
+
+    }
+
+.txt {
+      width: 300px;
+      height: 750px;
+      border-radius: 4px;
+      background-color: rgb(255, 225, 166);
+      background-size: 100%;
+
+    }
+
+  }
+
+
+@media all and (max-width: 1000px){
+.all_waku {
+      width: 835px;
+      height: 1410px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+.list {
+      width: 135px;
+      height: 1410px;
+      background-color: rgb(255, 225, 166);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+.right_waku {
+      width:  700px;
+      height: 1410px;
+      background-color: rgb(255, 225, 166);
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -50,10 +106,21 @@
       width: 700px;
       height: 50px;
       border-radius: 4px;
-      background-color: rgb(99, 99, 99);
+      background-color: rgb(255, 225, 166);
       background-size: 100%;
 
     }
+
+.txt {
+      width: 700px;
+      height: 660px;
+      border-radius: 4px;
+      background-color: rgb(255, 225, 166);
+      background-size: 100%;
+
+    }
+
+  }
 
 .c1 {
       width: 135px;
@@ -355,15 +422,6 @@
       border: 1px solid rgb(90, 90, 90);
     }
 
-.karibana {
-      width: 135px;
-      height: 45px;
-      border-radius: 4px;
-      background-image: url(./data/kari/bana.jpg);
-      background-size: 100%;
-      border: 1px solid rgb(90, 90, 90);
-    }
-
 
     /* ↑ここにCSSを書く。 */
   </style>
@@ -404,10 +462,12 @@
         <div class="c30" @click="hyoji30">仮</div>
       </div>
       <div class="right_waku">
-        <div class="i1"><img id="chara" src="./data/c4/chara.jpg" width="700" height="700"></div>
         <div class="data">
           <p>リンク集：<a href="https://twitter.com/mofumaru_yu" target="_blank">Twitter</a>  <a href="https://www.pixiv.net/users/3103617" target="_blank">Pixiv</a>  <a href="https://skeb.jp/@mofumaruyu" target="_blank">Skeb</a></p>
         </div>
+        <div class="i1"><img id="chara" src="./data/c4/chara.jpg" width="700" height="700"></div>
+        <div class="txt"><object id="text" data="./data/c4/text.txt" type="text/HTML" width=100% height=100%></object></div>
+
       </div>
     </div>
 
@@ -418,36 +478,36 @@
     const App = {
       setup() {
 
-        const hyoji1  = () => { document.getElementById("chara").src= "./data/c1/chara.jpg"; }
-        const hyoji2  = () => { document.getElementById("chara").src= "./data/c2/chara.jpg"; }
-        const hyoji3  = () => { document.getElementById("chara").src= "./data/c3/chara.jpg"; }
-        const hyoji4  = () => { document.getElementById("chara").src= "./data/c4/chara.jpg"; }
-        const hyoji5  = () => { document.getElementById("chara").src= "./data/c5/chara.jpg"; }
-        const hyoji6  = () => { document.getElementById("chara").src= "./data/c6/chara.jpg"; }
-        const hyoji7  = () => { document.getElementById("chara").src= "./data/c7/chara.jpg"; }
-        const hyoji8  = () => { document.getElementById("chara").src= "./data/c8/chara.jpg"; }
-        const hyoji9  = () => { document.getElementById("chara").src= "./data/c9/chara.jpg"; }
-        const hyoji10  = () => { document.getElementById("chara").src= "./data/c10/chara.jpg"; }
-        const hyoji11  = () => { document.getElementById("chara").src= "./data/c11/chara.jpg"; }
-        const hyoji12  = () => { document.getElementById("chara").src= "./data/c12/chara.jpg"; }
-        const hyoji13  = () => { document.getElementById("chara").src= "./data/c13/chara.jpg"; }
-        const hyoji14  = () => { document.getElementById("chara").src= "./data/c14/chara.jpg"; }
-        const hyoji15  = () => { document.getElementById("chara").src= "./data/c15/chara.jpg"; }
-        const hyoji16  = () => { document.getElementById("chara").src= "./data/c16/chara.jpg"; }
-        const hyoji17  = () => { document.getElementById("chara").src= "./data/c17/chara.jpg"; }
-        const hyoji18  = () => { document.getElementById("chara").src= "./data/c18/chara.jpg"; }
-        const hyoji19  = () => { document.getElementById("chara").src= "./data/c19/chara.jpg"; }
-        const hyoji20  = () => { document.getElementById("chara").src= "./data/c20/chara.jpg"; }
-        const hyoji21  = () => { document.getElementById("chara").src= "./data/c21/chara.jpg"; }
-        const hyoji22  = () => { document.getElementById("chara").src= "./data/c22/chara.jpg"; }
-        const hyoji23  = () => { document.getElementById("chara").src= "./data/c23/chara.jpg"; }
-        const hyoji24  = () => { document.getElementById("chara").src= "./data/c24/chara.jpg"; }
-        const hyoji25  = () => { document.getElementById("chara").src= "./data/c25/chara.jpg"; }
-        const hyoji26  = () => { document.getElementById("chara").src= "./data/c26/chara.jpg"; }
-        const hyoji27  = () => { document.getElementById("chara").src= "./data/c27/chara.jpg"; }
-        const hyoji28  = () => { document.getElementById("chara").src= "./data/c28/chara.jpg"; }
-        const hyoji29  = () => { document.getElementById("chara").src= "./data/c29/chara.jpg"; }
-        const hyoji30  = () => { document.getElementById("chara").src= "./data/c30/chara.jpg"; }
+        const hyoji1  = () => { document.getElementById("chara").src= "./data/c1/chara.jpg"; document.getElementById("text").data="./data/c1/text.txt";}
+        const hyoji2  = () => { document.getElementById("chara").src= "./data/c2/chara.jpg"; document.getElementById("text").data="./data/c2/text.txt"; }
+        const hyoji3  = () => { document.getElementById("chara").src= "./data/c3/chara.jpg"; document.getElementById("text").data="./data/c3/text.txt"; }
+        const hyoji4  = () => { document.getElementById("chara").src= "./data/c4/chara.jpg"; document.getElementById("text").data="./data/c4/text.txt"; }
+        const hyoji5  = () => { document.getElementById("chara").src= "./data/c5/chara.jpg"; document.getElementById("text").data="./data/c5/text.txt"; }
+        const hyoji6  = () => { document.getElementById("chara").src= "./data/c6/chara.jpg"; document.getElementById("text").data="./data/c6/text.txt"; }
+        const hyoji7  = () => { document.getElementById("chara").src= "./data/c7/chara.jpg"; document.getElementById("text").data="./data/c7/text.txt"; }
+        const hyoji8  = () => { document.getElementById("chara").src= "./data/c8/chara.jpg"; document.getElementById("text").data="./data/c8/text.txt"; }
+        const hyoji9  = () => { document.getElementById("chara").src= "./data/c9/chara.jpg"; document.getElementById("text").data="./data/c9/text.txt"; }
+        const hyoji10  = () => { document.getElementById("chara").src= "./data/c10/chara.jpg"; document.getElementById("text").data="./data/c10/text.txt"; }
+        const hyoji11  = () => { document.getElementById("chara").src= "./data/c11/chara.jpg"; document.getElementById("text").data="./data/c11/text.txt"; }
+        const hyoji12  = () => { document.getElementById("chara").src= "./data/c12/chara.jpg"; document.getElementById("text").data="./data/c12/text.txt"; }
+        const hyoji13  = () => { document.getElementById("chara").src= "./data/c13/chara.jpg"; document.getElementById("text").data="./data/c13/text.txt"; }
+        const hyoji14  = () => { document.getElementById("chara").src= "./data/c14/chara.jpg"; document.getElementById("text").data="./data/c14/text.txt"; }
+        const hyoji15  = () => { document.getElementById("chara").src= "./data/c15/chara.jpg"; document.getElementById("text").data="./data/c15/text.txt"; }
+        const hyoji16  = () => { document.getElementById("chara").src= "./data/c16/chara.jpg"; document.getElementById("text").data="./data/c16/text.txt"; }
+        const hyoji17  = () => { document.getElementById("chara").src= "./data/c17/chara.jpg"; document.getElementById("text").data="./data/c17/text.txt"; }
+        const hyoji18  = () => { document.getElementById("chara").src= "./data/c18/chara.jpg"; document.getElementById("text").data="./data/c18/text.txt"; }
+        const hyoji19  = () => { document.getElementById("chara").src= "./data/c19/chara.jpg"; document.getElementById("text").data="./data/c19/text.txt"; }
+        const hyoji20  = () => { document.getElementById("chara").src= "./data/c20/chara.jpg"; document.getElementById("text").data="./data/c20/text.txt"; }
+        const hyoji21  = () => { document.getElementById("chara").src= "./data/c21/chara.jpg"; document.getElementById("text").data="./data/c21/text.txt"; }
+        const hyoji22  = () => { document.getElementById("chara").src= "./data/c22/chara.jpg"; document.getElementById("text").data="./data/c22/text.txt"; }
+        const hyoji23  = () => { document.getElementById("chara").src= "./data/c23/chara.jpg"; document.getElementById("text").data="./data/c23/text.txt"; }
+        const hyoji24  = () => { document.getElementById("chara").src= "./data/c24/chara.jpg"; document.getElementById("text").data="./data/c24/text.txt"; }
+        const hyoji25  = () => { document.getElementById("chara").src= "./data/c25/chara.jpg"; document.getElementById("text").data="./data/c25/text.txt"; }
+        const hyoji26  = () => { document.getElementById("chara").src= "./data/c26/chara.jpg"; document.getElementById("text").data="./data/c26/text.txt"; }
+        const hyoji27  = () => { document.getElementById("chara").src= "./data/c27/chara.jpg"; document.getElementById("text").data="./data/c27/text.txt"; }
+        const hyoji28  = () => { document.getElementById("chara").src= "./data/c28/chara.jpg"; document.getElementById("text").data="./data/c28/text.txt"; }
+        const hyoji29  = () => { document.getElementById("chara").src= "./data/c29/chara.jpg"; document.getElementById("text").data="./data/c29/text.txt"; }
+        const hyoji30  = () => { document.getElementById("chara").src= "./data/c30/chara.jpg"; document.getElementById("text").data="./data/c30/text.txt"; }
 
           return {
             hyoji1,
