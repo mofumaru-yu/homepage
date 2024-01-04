@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ゆぅさんポートフォリオ</title>
+  <script src="https://unpkg.com/vue@3.2.37/dist/vue.global.js"></script>
+  <style>
+
+:root {
+  --dir: "./data/c4/chara.jpg)";
+}
+
+.all_waku {
+      width: 1300px;
+      height: 750px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+.list {
+      width: 450px;
+      height: 750px;
+      background-color: rgb(255, 225, 166);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+
+.right_waku {
+      width:  850px;
+      height: 750px;
+      background-color: rgb(255, 225, 166);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+.data1 {
+      width: 850px;
+      height: 50px;
+      border-radius: 4px;
+      background-color: rgb(255, 225, 166);
+      background-size: 100%;
+    }
+
+.box1 {
+      width: 850px;
+      height:700px;
+      background-color: rgb(255, 225, 166);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+.pic {
+      width: 700px;
+      height:700px;
+      border-radius: 4px;
+      background-color: rgb(255, 225, 166);
+      background-size: 100%;
+    }
+
+.box2 {
+      width: 75px;
+      height: 700px;
+      border-radius: 4px;
+      background-color: rgb(255, 225, 166);
+      background-size: 100%;
+    }
+
+.c1 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/1.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c2 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/2.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c3 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/3.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c4 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/4.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c5 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/5.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c6 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/6.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c7 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/7.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c8 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/8.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c9 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/9.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c10 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/10.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c11 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/11.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c12 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/12.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c13 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/13.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c14 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/14.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+    
+.c15 {
+      width: 148px;
+      height: 148px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/pict/15.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+
+    /* ↑ここにCSSを書く。 */
+  </style>
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <div id="app">
+    <div class="all_waku">
+      <div class="list">
+        <div class="c1" @click="hyoji1"></div>
+        <div class="c2" @click="hyoji2"></div>
+        <div class="c3" @click="hyoji3"></div>
+        <div class="c4" @click="hyoji4"></div>
+        <div class="c5" @click="hyoji5"></div>
+        <div class="c6" @click="hyoji6"></div>
+        <div class="c7" @click="hyoji7"></div>
+        <div class="c8" @click="hyoji8"></div>
+        <div class="c9" @click="hyoji9"></div>
+        <div class="c10" @click="hyoji10"></div>
+        <div class="c11" @click="hyoji11"></div>
+        <div class="c12" @click="hyoji12"></div>
+        <div class="c13" @click="hyoji13"></div>
+        <div class="c14" @click="hyoji14"></div>
+        <div class="c15" @click="hyoji15"></div>
+      </div>
+
+      <div class="right_waku">
+        <div class="data1">
+          <p>リンク集：<a href="https://twitter.com/mofumaru_yu" target="_blank">X(Twitter)</a>  <a href="https://www.pixiv.net/users/3103617" target="_blank">Pixiv</a>  <a href="https://skeb.jp/@mofumaruyu" target="_blank">Skeb</a>　　　　　キャラ紹介→→→<a href="./index.html">●</a></p>
+        </div>
+        <div class="box1">
+          <div class="box2"></div>
+          <div class="pic"><img id="chara1" src="./data/pict/1.jpg" width="700" height="700"></div>
+          <div class="box2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ↑ここに表示するものを書く。 -->
+  </div>
+  
+  <script>
+    const App = {
+      setup() {
+
+        const hyoji1  = () => {
+          document.getElementById("chara1").src= "./data/pict/1.jpg";
+          }
+        const hyoji2  = () => {
+          document.getElementById("chara1").src= "./data/pict/2.jpg";
+          }
+        const hyoji3  = () => {
+          document.getElementById("chara1").src= "./data/pict/3.jpg";
+          }
+        const hyoji4  = () => {
+          document.getElementById("chara1").src= "./data/pict/4.jpg";
+          }
+        const hyoji5  = () => {
+          document.getElementById("chara1").src= "./data/pict/5.jpg";
+          }
+        const hyoji6  = () => {
+          document.getElementById("chara1").src= "./data/pict/6.jpg";
+          }
+        const hyoji7  = () => {
+          document.getElementById("chara1").src= "./data/pict/7.jpg";
+          }
+        const hyoji8  = () => {
+          document.getElementById("chara1").src= "./data/pict/8.jpg";
+          }
+        const hyoji9  = () => {
+          document.getElementById("chara1").src= "./data/pict/9.jpg";
+          }
+        const hyoji10  = () => {
+          document.getElementById("chara1").src= "./data/pict/10.jpg";
+          }
+        const hyoji11  = () => {
+          document.getElementById("chara1").src= "./data/pict/11.jpg";
+          }
+        const hyoji12  = () => {
+          document.getElementById("chara1").src= "./data/pict/12.jpg";
+          }
+        const hyoji13  = () => {
+          document.getElementById("chara1").src= "./data/pict/13.jpg";
+          }
+        const hyoji14  = () => {
+          document.getElementById("chara1").src= "./data/pict/14.jpg";
+          }
+        const hyoji15  = () => {
+          document.getElementById("chara1").src= "./data/pict/15.jpg";
+          }
+
+          return {
+            hyoji1,
+            hyoji2,
+            hyoji3,
+            hyoji4,
+            hyoji5,
+            hyoji6,
+            hyoji7,
+            hyoji8,
+            hyoji9,
+            hyoji10,
+            hyoji11,
+            hyoji12,
+            hyoji13,
+            hyoji14,
+            hyoji15,
+        }
+        // ↑ここにJavaScriptを書く。
+      },
+    } 
+
+    Vue.createApp(App).mount('#app')
+  </script>
+</body>
+</html>
