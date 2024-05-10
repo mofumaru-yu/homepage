@@ -11,9 +11,9 @@
 }
 
 @media all and (min-width: 1000px){
-.all_waku {
+  .all_waku {
       width: 1300px;
-      height: 750px;
+      height: 850px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -21,7 +21,7 @@
 
 .list {
       width: 300px;
-      height: 750px;
+      height: 850px;
       background-color: rgb(255, 225, 166);
       display: flex;
       flex-direction: row;
@@ -31,7 +31,7 @@
 
 .right_waku {
       width:  1000px;
-      height: 750px;
+      height: 850px;
       background-color: rgb(255, 225, 166);
       display: flex;
       flex-direction: column;
@@ -55,7 +55,7 @@
 
 .txt {
       width: 300px;
-      height: 700px;
+      height: 800px;
       border-radius: 4px;
       background-color: rgb(255, 225, 166);
       background-size: 100%;
@@ -77,7 +77,7 @@
 @media all and (max-width: 1000px){
 .all_waku {
       width: 835px;
-      height: 1410px;
+      height: 1510px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -85,7 +85,7 @@
 
 .list {
       width: 135px;
-      height: 1410px;
+      height: 1510px;
       background-color: rgb(255, 225, 166);
       display: flex;
       flex-direction: row;
@@ -95,7 +95,7 @@
 
 .right_waku {
       width:  700px;
-      height: 1410px;
+      height: 1510px;
       background-color: rgb(255, 225, 166);
       display: flex;
       flex-direction: column;
@@ -122,7 +122,7 @@
 
 .txt {
       width: 700px;
-      height: 610px;
+      height: 710px;
       border-radius: 4px;
       background-color: rgb(255, 225, 166);
       background-size: 100%;
@@ -440,6 +440,46 @@
       border: 1px solid rgb(90, 90, 90);
     }
 
+.c31 {
+      width: 135px;
+      height: 45px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/c30/bana.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+
+.c32 {
+      width: 135px;
+      height: 45px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/c30/bana.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+
+.c33 {
+      width: 135px;
+      height: 45px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/c30/bana.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+
+.c34 {
+      width: 135px;
+      height: 45px;
+      border-radius: 4px;
+      font-size: 50;
+      background-image: url(./data/c30/bana.jpg);
+      background-size: 100%;
+      border: 1px solid rgb(90, 90, 90);
+    }
+
 
     /* ↑ここにCSSを書く。 */
   </style>
@@ -484,6 +524,10 @@
         <div class="c28" @click="hyoji28"></div>
         <div class="c29" @click="hyoji29"></div>
         <div class="c30" @click="hyoji30"></div>
+        <div class="c31" @click="hyoji31"></div>
+        <div class="c32" @click="hyoji32"></div>
+        <div class="c33" @click="hyoji33"></div>
+        <div class="c34" @click="hyoji34"></div>
       </div>
       <div class="right_waku">
         <div class="data1">
@@ -694,6 +738,30 @@
           document.getElementById("chara4").href="./data/c30/3.jpg"; document.getElementById("chara5").href="./data/c30/4.jpg";
           document.getElementById("chara6").href="./data/c30/5.jpg"; document.getElementById("chara7").href="./data/c30/6.jpg";
           }
+        const hyoji31  = () => {
+          document.getElementById("chara1").src= "./data/c31/e_chara.jpg"; document.getElementById("text").data="./data/c31/text.txt";
+          document.getElementById("chara2").href="./data/c31/1.jpg"; document.getElementById("chara3").href="./data/c31/2.jpg";
+          document.getElementById("chara4").href="./data/c31/3.jpg"; document.getElementById("chara5").href="./data/c31/4.jpg";
+          document.getElementById("chara6").href="./data/c31/5.jpg"; document.getElementById("chara7").href="./data/c31/6.jpg";
+          }
+        const hyoji32  = () => {
+          document.getElementById("chara1").src= "./data/c32/e_chara.jpg"; document.getElementById("text").data="./data/c32/text.txt";
+          document.getElementById("chara2").href="./data/c32/1.jpg"; document.getElementById("chara3").href="./data/c32/2.jpg";
+          document.getElementById("chara4").href="./data/c32/3.jpg"; document.getElementById("chara5").href="./data/c32/4.jpg";
+          document.getElementById("chara6").href="./data/c32/5.jpg"; document.getElementById("chara7").href="./data/c32/6.jpg";
+          }
+        const hyoji33  = () => {
+          document.getElementById("chara1").src= "./data/c33/e_chara.jpg"; document.getElementById("text").data="./data/c33/text.txt";
+          document.getElementById("chara2").href="./data/c33/1.jpg"; document.getElementById("chara3").href="./data/c33/2.jpg";
+          document.getElementById("chara4").href="./data/c33/3.jpg"; document.getElementById("chara5").href="./data/c33/4.jpg";
+          document.getElementById("chara6").href="./data/c33/5.jpg"; document.getElementById("chara7").href="./data/c33/6.jpg";
+          }
+        const hyoji34  = () => {
+          document.getElementById("chara1").src= "./data/c34/e_chara.jpg"; document.getElementById("text").data="./data/c34/text.txt";
+          document.getElementById("chara2").href="./data/c34/1.jpg"; document.getElementById("chara3").href="./data/c34/2.jpg";
+          document.getElementById("chara4").href="./data/c34/3.jpg"; document.getElementById("chara5").href="./data/c34/4.jpg";
+          document.getElementById("chara6").href="./data/c34/5.jpg"; document.getElementById("chara7").href="./data/c34/6.jpg";
+          }
 
           return {
             hyoji1,
@@ -726,6 +794,10 @@
             hyoji28,
             hyoji29,
             hyoji30,
+            hyoji31,
+            hyoji32,
+            hyoji33,
+            hyoji34,
         }
         // ↑ここにJavaScriptを書く。
       },
