@@ -39,32 +39,32 @@
     }
 
 .i1 {
-      width: 700px;
+      width: 1000px;
       height: 700px;
       border-radius: 4px;
     }
 
 .data1 {
-      width: 700px;
+      width: 1000px;
       height: 50px;
       border-radius: 4px;
       background-color: rgb(255, 225, 166);
       background-size: 100%;
 
     }
-
+/*
 .txt {
       width: 300px;
-      height: 800px;
+      height: 100px;
       border-radius: 4px;
       background-color: rgb(255, 225, 166);
       background-size: 100%;
 
     }
-
+*/
 .lnk {
       width: 300px;
-      height: 50px;
+      height: 100px;
       border-radius: 4px;
       background-color: rgb(255, 225, 166);
       background-size: 100%;
@@ -76,16 +76,16 @@
 
 @media all and (max-width: 1000px){
 .all_waku {
-      width: 835px;
-      height: 1510px;
+      width: 1000px;
+      height: 1100px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
 
 .list {
-      width: 135px;
-      height: 1510px;
+      width: 1000px;
+      height: 250px;
       background-color: rgb(255, 225, 166);
       display: flex;
       flex-direction: row;
@@ -94,8 +94,8 @@
     }
 
 .right_waku {
-      width:  700px;
-      height: 1510px;
+      width:  1000px;
+      height: 850px;
       background-color: rgb(255, 225, 166);
       display: flex;
       flex-direction: column;
@@ -103,7 +103,7 @@
     }
 
 .i1 {
-      width: 700px;
+      width: 1000px;
       height: 700px;
       border-radius: 4px;
 /*      background-image: var(--dir);
@@ -119,18 +119,18 @@
       background-size: 100%;
 
     }
-
+/*
 .txt {
-      width: 700px;
-      height: 710px;
+      width: 1000px;
+      height: 75px;
       border-radius: 4px;
       background-color: rgb(255, 225, 166);
       background-size: 100%;
 
     }
-
+*/
 .lnk {
-      width: 700px;
+      width: 300px;
       height: 50px;
       border-radius: 4px;
       background-color: rgb(255, 225, 166);
@@ -532,10 +532,12 @@
         <div class="data1">
           <p>リンク集：<a href="https://twitter.com/mofumaru_yu" target="_blank">X(Twitter)</a>  <a href="https://www.pixiv.net/users/3103617" target="_blank">Pixiv</a>  <a href="https://skeb.jp/@mofumaruyu" target="_blank">Skeb</a>　ポートフォリオ→<a href="./port.html">●</a>　English(Partial only)→<a href="./Eng.html">●</a></p>
         </div>
-        <div class="i1"><img id="chara1" src="./data/c4/chara.jpg" width="700" height="700"></div>
+        <div class="i1"><img id="chara1" src="./data/c4/chara1.jpg" width="1000" height="700"></div>
+        <!--
         <div class="txt">
           <object id="text" data="./data/c4/text.txt" type="text/HTML" width=100% height=100%></object>
         </div>
+        -->
 
         <div class="lnk">
           この子のお気に入りイラスト。<p>
@@ -558,205 +560,205 @@
       setup() {
 
         const hyoji1  = () => {
-          document.getElementById("chara1").src= "./data/c1/chara.jpg"; document.getElementById("text").data="./data/c1/text.txt";
+          document.getElementById("chara1").src= "./data/c1/chara1.jpg"; document.getElementById("text").data="./data/c1/text.txt";
           document.getElementById("chara2").href="./data/c1/1.jpg"; document.getElementById("chara3").href="./data/c1/2.jpg";
           document.getElementById("chara4").href="./data/c1/3.jpg"; document.getElementById("chara5").href="./data/c1/4.jpg";
           document.getElementById("chara6").href="./data/c1/5.jpg"; document.getElementById("chara7").href="./data/c1/6.jpg";
           }
         const hyoji2  = () => {
-          document.getElementById("chara1").src= "./data/c2/chara.jpg"; document.getElementById("text").data="./data/c2/text.txt";
+          document.getElementById("chara1").src= "./data/c2/chara1.jpg"; document.getElementById("text").data="./data/c2/text.txt";
           document.getElementById("chara2").href="./data/c2/1.jpg"; document.getElementById("chara3").href="./data/c2/2.jpg";
           document.getElementById("chara4").href="./data/c2/3.jpg"; document.getElementById("chara5").href="./data/c2/4.jpg";
           document.getElementById("chara6").href="./data/c2/5.jpg"; document.getElementById("chara7").href="./data/c2/6.jpg";
           }
         const hyoji3  = () => {
-          document.getElementById("chara1").src= "./data/c3/chara.jpg"; document.getElementById("text").data="./data/c3/text.txt";
+          document.getElementById("chara1").src= "./data/c3/chara1.jpg"; document.getElementById("text").data="./data/c3/text.txt";
           document.getElementById("chara2").href="./data/c3/1.jpg"; document.getElementById("chara3").href="./data/c3/2.jpg";
           document.getElementById("chara4").href="./data/c3/3.jpg"; document.getElementById("chara5").href="./data/c3/4.jpg";
           document.getElementById("chara6").href="./data/c3/5.jpg"; document.getElementById("chara7").href="./data/c3/6.jpg";
           }
         const hyoji4  = () => {
-          document.getElementById("chara1").src= "./data/c4/chara.jpg"; document.getElementById("text").data="./data/c4/text.txt";
+          document.getElementById("chara1").src= "./data/c4/chara1.jpg"; document.getElementById("text").data="./data/c4/text.txt";
           document.getElementById("chara2").href="./data/c4/1.jpg"; document.getElementById("chara3").href="./data/c4/2.jpg";
           document.getElementById("chara4").href="./data/c4/3.jpg"; document.getElementById("chara5").href="./data/c4/4.jpg";
           document.getElementById("chara6").href="./data/c4/5.jpg"; document.getElementById("chara7").href="./data/c4/6.jpg";
           }
         const hyoji5  = () => {
-          document.getElementById("chara1").src= "./data/c5/chara.jpg"; document.getElementById("text").data="./data/c5/text.txt";
+          document.getElementById("chara1").src= "./data/c5/chara1.jpg"; document.getElementById("text").data="./data/c5/text.txt";
           document.getElementById("chara2").href="./data/c5/1.jpg"; document.getElementById("chara3").href="./data/c5/2.jpg";
           document.getElementById("chara4").href="./data/c5/3.jpg"; document.getElementById("chara5").href="./data/c5/4.jpg";
           document.getElementById("chara6").href="./data/c5/5.jpg"; document.getElementById("chara7").href="./data/c5/6.jpg";
           }
         const hyoji6  = () => {
-          document.getElementById("chara1").src= "./data/c6/chara.jpg"; document.getElementById("text").data="./data/c6/text.txt";
+          document.getElementById("chara1").src= "./data/c6/chara1.jpg"; document.getElementById("text").data="./data/c6/text.txt";
           document.getElementById("chara2").href="./data/c6/1.jpg"; document.getElementById("chara3").href="./data/c6/2.jpg";
           document.getElementById("chara4").href="./data/c6/3.jpg"; document.getElementById("chara5").href="./data/c6/4.jpg";
           document.getElementById("chara6").href="./data/c6/5.jpg"; document.getElementById("chara7").href="./data/c6/6.jpg";
           }
         const hyoji7  = () => {
-          document.getElementById("chara1").src= "./data/c7/chara.jpg"; document.getElementById("text").data="./data/c7/text.txt";
+          document.getElementById("chara1").src= "./data/c7/chara1.jpg"; document.getElementById("text").data="./data/c7/text.txt";
           document.getElementById("chara2").href="./data/c7/1.jpg"; document.getElementById("chara3").href="./data/c7/2.jpg";
           document.getElementById("chara4").href="./data/c7/3.jpg"; document.getElementById("chara5").href="./data/c7/4.jpg";
           document.getElementById("chara6").href="./data/c7/5.jpg"; document.getElementById("chara7").href="./data/c7/6.jpg";
           }
         const hyoji8  = () => {
-          document.getElementById("chara1").src= "./data/c8/chara.jpg"; document.getElementById("text").data="./data/c8/text.txt";
+          document.getElementById("chara1").src= "./data/c8/chara1.jpg"; document.getElementById("text").data="./data/c8/text.txt";
           document.getElementById("chara2").href="./data/c8/1.jpg"; document.getElementById("chara3").href="./data/c8/2.jpg";
           document.getElementById("chara4").href="./data/c8/3.jpg"; document.getElementById("chara5").href="./data/c8/4.jpg";
           document.getElementById("chara6").href="./data/c8/5.jpg"; document.getElementById("chara7").href="./data/c8/6.jpg";
           }
         const hyoji9  = () => {
-          document.getElementById("chara1").src= "./data/c9/chara.jpg"; document.getElementById("text").data="./data/c9/text.txt";
+          document.getElementById("chara1").src= "./data/c9/chara1.jpg"; document.getElementById("text").data="./data/c9/text.txt";
           document.getElementById("chara2").href="./data/c9/1.jpg"; document.getElementById("chara3").href="./data/c9/2.jpg";
           document.getElementById("chara4").href="./data/c9/3.jpg"; document.getElementById("chara5").href="./data/c9/4.jpg";
           document.getElementById("chara6").href="./data/c9/5.jpg"; document.getElementById("chara7").href="./data/c9/6.jpg";
           }
         const hyoji10  = () => {
-          document.getElementById("chara1").src= "./data/c10/chara.jpg"; document.getElementById("text").data="./data/c10/text.txt";
+          document.getElementById("chara1").src= "./data/c10/chara1.jpg"; document.getElementById("text").data="./data/c10/text.txt";
           document.getElementById("chara2").href="./data/c10/1.jpg"; document.getElementById("chara3").href="./data/c10/2.jpg";
           document.getElementById("chara4").href="./data/c10/3.jpg"; document.getElementById("chara5").href="./data/c10/4.jpg";
           document.getElementById("chara6").href="./data/c10/5.jpg"; document.getElementById("chara7").href="./data/c10/6.jpg";
           }
         const hyoji11  = () => {
-          document.getElementById("chara1").src= "./data/c11/chara.jpg"; document.getElementById("text").data="./data/c11/text.txt";
+          document.getElementById("chara1").src= "./data/c11/chara1.jpg"; document.getElementById("text").data="./data/c11/text.txt";
           document.getElementById("chara2").href="./data/c11/1.jpg"; document.getElementById("chara3").href="./data/c11/2.jpg";
           document.getElementById("chara4").href="./data/c11/3.jpg"; document.getElementById("chara5").href="./data/c11/4.jpg";
           document.getElementById("chara6").href="./data/c11/5.jpg"; document.getElementById("chara7").href="./data/c11/6.jpg";
           }
         const hyoji12  = () => {
-          document.getElementById("chara1").src= "./data/c12/chara.jpg"; document.getElementById("text").data="./data/c12/text.txt";
+          document.getElementById("chara1").src= "./data/c12/chara1.jpg"; document.getElementById("text").data="./data/c12/text.txt";
           document.getElementById("chara2").href="./data/c12/1.jpg"; document.getElementById("chara3").href="./data/c12/2.jpg";
           document.getElementById("chara4").href="./data/c12/3.jpg"; document.getElementById("chara5").href="./data/c12/4.jpg";
           document.getElementById("chara6").href="./data/c12/5.jpg"; document.getElementById("chara7").href="./data/c12/6.jpg";
           }
         const hyoji13  = () => {
-          document.getElementById("chara1").src= "./data/c13/chara.jpg"; document.getElementById("text").data="./data/c13/text.txt";
+          document.getElementById("chara1").src= "./data/c13/chara1.jpg"; document.getElementById("text").data="./data/c13/text.txt";
           document.getElementById("chara2").href="./data/c13/1.jpg"; document.getElementById("chara3").href="./data/c13/2.jpg";
           document.getElementById("chara4").href="./data/c13/3.jpg"; document.getElementById("chara5").href="./data/c13/4.jpg";
           document.getElementById("chara6").href="./data/c13/5.jpg"; document.getElementById("chara7").href="./data/c13/6.jpg";
           }
         const hyoji14  = () => {
-          document.getElementById("chara1").src= "./data/c14/chara.jpg"; document.getElementById("text").data="./data/c14/text.txt";
+          document.getElementById("chara1").src= "./data/c14/chara1.jpg"; document.getElementById("text").data="./data/c14/text.txt";
           document.getElementById("chara2").href="./data/c14/1.jpg"; document.getElementById("chara3").href="./data/c14/2.jpg";
           document.getElementById("chara4").href="./data/c14/3.jpg"; document.getElementById("chara5").href="./data/c14/4.jpg";
           document.getElementById("chara6").href="./data/c14/5.jpg"; document.getElementById("chara7").href="./data/c14/6.jpg";
           }
         const hyoji15  = () => {
-          document.getElementById("chara1").src= "./data/c15/chara.jpg"; document.getElementById("text").data="./data/c15/text.txt";
+          document.getElementById("chara1").src= "./data/c15/chara1.jpg"; document.getElementById("text").data="./data/c15/text.txt";
           document.getElementById("chara2").href="./data/c15/1.jpg"; document.getElementById("chara3").href="./data/c15/2.jpg";
           document.getElementById("chara4").href="./data/c15/3.jpg"; document.getElementById("chara5").href="./data/c15/4.jpg";
           document.getElementById("chara6").href="./data/c15/5.jpg"; document.getElementById("chara7").href="./data/c15/6.jpg";
           }
         const hyoji16  = () => {
-          document.getElementById("chara1").src= "./data/c16/chara.jpg"; document.getElementById("text").data="./data/c16/text.txt";
+          document.getElementById("chara1").src= "./data/c16/chara1.jpg"; document.getElementById("text").data="./data/c16/text.txt";
           document.getElementById("chara2").href="./data/c16/1.jpg"; document.getElementById("chara3").href="./data/c16/2.jpg";
           document.getElementById("chara4").href="./data/c16/3.jpg"; document.getElementById("chara5").href="./data/c16/4.jpg";
           document.getElementById("chara6").href="./data/c16/5.jpg"; document.getElementById("chara7").href="./data/c16/6.jpg";
           }
         const hyoji17  = () => {
-          document.getElementById("chara1").src= "./data/c17/chara.jpg"; document.getElementById("text").data="./data/c17/text.txt";
+          document.getElementById("chara1").src= "./data/c17/chara1.jpg"; document.getElementById("text").data="./data/c17/text.txt";
           document.getElementById("chara2").href="./data/c17/1.jpg"; document.getElementById("chara3").href="./data/c17/2.jpg";
           document.getElementById("chara4").href="./data/c17/3.jpg"; document.getElementById("chara5").href="./data/c17/4.jpg";
           document.getElementById("chara6").href="./data/c17/5.jpg"; document.getElementById("chara7").href="./data/c17/6.jpg";
           }
         const hyoji18  = () => {
-          document.getElementById("chara1").src= "./data/c18/chara.jpg"; document.getElementById("text").data="./data/c18/text.txt";
+          document.getElementById("chara1").src= "./data/c18/chara1.jpg"; document.getElementById("text").data="./data/c18/text.txt";
           document.getElementById("chara2").href="./data/c18/1.jpg"; document.getElementById("chara3").href="./data/c18/2.jpg";
           document.getElementById("chara4").href="./data/c18/3.jpg"; document.getElementById("chara5").href="./data/c18/4.jpg";
           document.getElementById("chara6").href="./data/c18/5.jpg"; document.getElementById("chara7").href="./data/c18/6.jpg";
           }
         const hyoji19  = () => {
-          document.getElementById("chara1").src= "./data/c19/chara.jpg"; document.getElementById("text").data="./data/c19/text.txt";
+          document.getElementById("chara1").src= "./data/c19/chara1.jpg"; document.getElementById("text").data="./data/c19/text.txt";
           document.getElementById("chara2").href="./data/c19/1.jpg"; document.getElementById("chara3").href="./data/c19/2.jpg";
           document.getElementById("chara4").href="./data/c19/3.jpg"; document.getElementById("chara5").href="./data/c19/4.jpg";
           document.getElementById("chara6").href="./data/c19/5.jpg"; document.getElementById("chara7").href="./data/c19/6.jpg";
           }
         const hyoji20  = () => {
-          document.getElementById("chara1").src= "./data/c20/chara.jpg"; document.getElementById("text").data="./data/c20/text.txt";
+          document.getElementById("chara1").src= "./data/c20/chara1.jpg"; document.getElementById("text").data="./data/c20/text.txt";
           document.getElementById("chara2").href="./data/c20/1.jpg"; document.getElementById("chara3").href="./data/c20/2.jpg";
           document.getElementById("chara4").href="./data/c20/3.jpg"; document.getElementById("chara5").href="./data/c20/4.jpg";
           document.getElementById("chara6").href="./data/c20/5.jpg"; document.getElementById("chara7").href="./data/c20/6.jpg";
           }
         const hyoji21  = () => {
-          document.getElementById("chara1").src= "./data/c21/chara.jpg"; document.getElementById("text").data="./data/c21/text.txt";
+          document.getElementById("chara1").src= "./data/c21/chara1.jpg"; document.getElementById("text").data="./data/c21/text.txt";
           document.getElementById("chara2").href="./data/c21/1.jpg"; document.getElementById("chara3").href="./data/c21/2.jpg";
           document.getElementById("chara4").href="./data/c21/3.jpg"; document.getElementById("chara5").href="./data/c21/4.jpg";
           document.getElementById("chara6").href="./data/c21/5.jpg"; document.getElementById("chara7").href="./data/c21/6.jpg";
           }
         const hyoji22  = () => {
-          document.getElementById("chara1").src= "./data/c22/chara.jpg"; document.getElementById("text").data="./data/c22/text.txt";
+          document.getElementById("chara1").src= "./data/c22/chara1.jpg"; document.getElementById("text").data="./data/c22/text.txt";
           document.getElementById("chara2").href="./data/c22/1.jpg"; document.getElementById("chara3").href="./data/c22/2.jpg";
           document.getElementById("chara4").href="./data/c22/3.jpg"; document.getElementById("chara5").href="./data/c22/4.jpg";
           document.getElementById("chara6").href="./data/c22/5.jpg"; document.getElementById("chara7").href="./data/c22/6.jpg";
           }
         const hyoji23  = () => {
-          document.getElementById("chara1").src= "./data/c23/chara.jpg"; document.getElementById("text").data="./data/c23/text.txt";
+          document.getElementById("chara1").src= "./data/c23/chara1.jpg"; document.getElementById("text").data="./data/c23/text.txt";
           document.getElementById("chara2").href="./data/c23/1.jpg"; document.getElementById("chara3").href="./data/c23/2.jpg";
           document.getElementById("chara4").href="./data/c23/3.jpg"; document.getElementById("chara5").href="./data/c23/4.jpg";
           document.getElementById("chara6").href="./data/c23/5.jpg"; document.getElementById("chara7").href="./data/c23/6.jpg";
           }
         const hyoji24  = () => {
-          document.getElementById("chara1").src= "./data/c24/chara.jpg"; document.getElementById("text").data="./data/c24/text.txt";
+          document.getElementById("chara1").src= "./data/c24/chara1.jpg"; document.getElementById("text").data="./data/c24/text.txt";
           document.getElementById("chara2").href="./data/c24/1.jpg"; document.getElementById("chara3").href="./data/c24/2.jpg";
           document.getElementById("chara4").href="./data/c24/3.jpg"; document.getElementById("chara5").href="./data/c24/4.jpg";
           document.getElementById("chara6").href="./data/c24/5.jpg"; document.getElementById("chara7").href="./data/c24/6.jpg";
           }
         const hyoji25  = () => {
-          document.getElementById("chara1").src= "./data/c25/chara.jpg"; document.getElementById("text").data="./data/c25/text.txt";
+          document.getElementById("chara1").src= "./data/c25/chara1.jpg"; document.getElementById("text").data="./data/c25/text.txt";
           document.getElementById("chara2").href="./data/c25/1.jpg"; document.getElementById("chara3").href="./data/c25/2.jpg";
           document.getElementById("chara4").href="./data/c25/3.jpg"; document.getElementById("chara5").href="./data/c25/4.jpg";
           document.getElementById("chara6").href="./data/c25/5.jpg"; document.getElementById("chara7").href="./data/c25/6.jpg";
           }
         const hyoji26  = () => {
-          document.getElementById("chara1").src= "./data/c26/chara.jpg"; document.getElementById("text").data="./data/c26/text.txt";
+          document.getElementById("chara1").src= "./data/c26/chara1.jpg"; document.getElementById("text").data="./data/c26/text.txt";
           document.getElementById("chara2").href="./data/c26/1.jpg"; document.getElementById("chara3").href="./data/c26/2.jpg";
           document.getElementById("chara4").href="./data/c26/3.jpg"; document.getElementById("chara5").href="./data/c26/4.jpg";
           document.getElementById("chara6").href="./data/c26/5.jpg"; document.getElementById("chara7").href="./data/c26/6.jpg";
           }
         const hyoji27  = () => {
-          document.getElementById("chara1").src= "./data/c27/chara.jpg"; document.getElementById("text").data="./data/c27/text.txt";
+          document.getElementById("chara1").src= "./data/c27/chara1.jpg"; document.getElementById("text").data="./data/c27/text.txt";
           document.getElementById("chara2").href="./data/c27/1.jpg"; document.getElementById("chara3").href="./data/c27/2.jpg";
           document.getElementById("chara4").href="./data/c27/3.jpg"; document.getElementById("chara5").href="./data/c27/4.jpg";
           document.getElementById("chara6").href="./data/c27/5.jpg"; document.getElementById("chara7").href="./data/c27/6.jpg";
           }
         const hyoji28  = () => {
-          document.getElementById("chara1").src= "./data/c28/chara.jpg"; document.getElementById("text").data="./data/c28/text.txt";
+          document.getElementById("chara1").src= "./data/c28/chara1.jpg"; document.getElementById("text").data="./data/c28/text.txt";
           document.getElementById("chara2").href="./data/c28/1.jpg"; document.getElementById("chara3").href="./data/c28/2.jpg";
           document.getElementById("chara4").href="./data/c28/3.jpg"; document.getElementById("chara5").href="./data/c28/4.jpg";
           document.getElementById("chara6").href="./data/c28/5.jpg"; document.getElementById("chara7").href="./data/c28/6.jpg";
           }
         const hyoji29  = () => {
-          document.getElementById("chara1").src= "./data/c29/chara.jpg"; document.getElementById("text").data="./data/c29/text.txt";
+          document.getElementById("chara1").src= "./data/c29/chara1.jpg"; document.getElementById("text").data="./data/c29/text.txt";
           document.getElementById("chara2").href="./data/c29/1.jpg"; document.getElementById("chara3").href="./data/c29/2.jpg";
           document.getElementById("chara4").href="./data/c29/3.jpg"; document.getElementById("chara5").href="./data/c29/4.jpg";
           document.getElementById("chara6").href="./data/c29/5.jpg"; document.getElementById("chara7").href="./data/c29/6.jpg";
           }
         const hyoji30  = () => {
-          document.getElementById("chara1").src= "./data/c30/chara.jpg"; document.getElementById("text").data="./data/c30/text.txt";
+          document.getElementById("chara1").src= "./data/c30/chara1.jpg"; document.getElementById("text").data="./data/c30/text.txt";
           document.getElementById("chara2").href="./data/c30/1.jpg"; document.getElementById("chara3").href="./data/c30/2.jpg";
           document.getElementById("chara4").href="./data/c30/3.jpg"; document.getElementById("chara5").href="./data/c30/4.jpg";
           document.getElementById("chara6").href="./data/c30/5.jpg"; document.getElementById("chara7").href="./data/c30/6.jpg";
           }
         const hyoji31  = () => {
-          document.getElementById("chara1").src= "./data/c31/chara.jpg"; document.getElementById("text").data="./data/c31/text.txt";
+          document.getElementById("chara1").src= "./data/c31/chara1.jpg"; document.getElementById("text").data="./data/c31/text.txt";
           document.getElementById("chara2").href="./data/c31/1.jpg"; document.getElementById("chara3").href="./data/c31/2.jpg";
           document.getElementById("chara4").href="./data/c31/3.jpg"; document.getElementById("chara5").href="./data/c31/4.jpg";
           document.getElementById("chara6").href="./data/c31/5.jpg"; document.getElementById("chara7").href="./data/c31/6.jpg";
           }
         const hyoji32  = () => {
-          document.getElementById("chara1").src= "./data/c32/chara.jpg"; document.getElementById("text").data="./data/c32/text.txt";
+          document.getElementById("chara1").src= "./data/c32/chara1.jpg"; document.getElementById("text").data="./data/c32/text.txt";
           document.getElementById("chara2").href="./data/c32/1.jpg"; document.getElementById("chara3").href="./data/c32/2.jpg";
           document.getElementById("chara4").href="./data/c32/3.jpg"; document.getElementById("chara5").href="./data/c32/4.jpg";
           document.getElementById("chara6").href="./data/c32/5.jpg"; document.getElementById("chara7").href="./data/c32/6.jpg";
           }
         const hyoji33  = () => {
-          document.getElementById("chara1").src= "./data/c33/chara.jpg"; document.getElementById("text").data="./data/c33/text.txt";
+          document.getElementById("chara1").src= "./data/c33/chara1.jpg"; document.getElementById("text").data="./data/c33/text.txt";
           document.getElementById("chara2").href="./data/c33/1.jpg"; document.getElementById("chara3").href="./data/c33/2.jpg";
           document.getElementById("chara4").href="./data/c33/3.jpg"; document.getElementById("chara5").href="./data/c33/4.jpg";
           document.getElementById("chara6").href="./data/c33/5.jpg"; document.getElementById("chara7").href="./data/c33/6.jpg";
           }
         const hyoji34  = () => {
-          document.getElementById("chara1").src= "./data/c34/chara.jpg"; document.getElementById("text").data="./data/c34/text.txt";
+          document.getElementById("chara1").src= "./data/c34/chara1.jpg"; document.getElementById("text").data="./data/c34/text.txt";
           document.getElementById("chara2").href="./data/c34/1.jpg"; document.getElementById("chara3").href="./data/c34/2.jpg";
           document.getElementById("chara4").href="./data/c34/3.jpg"; document.getElementById("chara5").href="./data/c34/4.jpg";
           document.getElementById("chara6").href="./data/c34/5.jpg"; document.getElementById("chara7").href="./data/c34/6.jpg";
